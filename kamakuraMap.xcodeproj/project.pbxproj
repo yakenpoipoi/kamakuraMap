@@ -23,6 +23,7 @@
 		8499F83E20941728000BA1BA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499F83D20941728000BA1BA /* MapViewController.swift */; };
 		8499F84020942E2A000BA1BA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499F83F20942E2A000BA1BA /* SecondViewController.swift */; };
 		8499F84220942F5F000BA1BA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499F84120942F5F000BA1BA /* CustomButton.swift */; };
+		8499F8492094AD6E000BA1BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499F8482094AD6D000BA1BA /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		8499F83F20942E2A000BA1BA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		8499F84120942F5F000BA1BA /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		8499F843209442A7000BA1BA /* Mutsuki.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mutsuki.ttf; sourceTree = "<group>"; };
+		8499F8482094AD6D000BA1BA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		84417D5E2089F4A100BB3513 /* kamakuraMap */ = {
 			isa = PBXGroup;
 			children = (
+				8499F8482094AD6D000BA1BA /* AppDelegate.swift */,
 				84417D90208D90EA00BB3513 /* IPAexfont00301 */,
 				84417D632089F4A100BB3513 /* Main.storyboard */,
 				8499F843209442A7000BA1BA /* Mutsuki.ttf */,
@@ -311,6 +314,7 @@
 				8499F84020942E2A000BA1BA /* SecondViewController.swift in Sources */,
 				84417D622089F4A100BB3513 /* ViewController.swift in Sources */,
 				8499F83E20941728000BA1BA /* MapViewController.swift in Sources */,
+				8499F8492094AD6E000BA1BA /* AppDelegate.swift in Sources */,
 				8499F84220942F5F000BA1BA /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

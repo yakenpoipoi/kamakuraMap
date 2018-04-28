@@ -27,7 +27,7 @@ class ViewController_1: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        var MapViewController:MapViewController = segue.destination as! MapViewController
+        let MapViewController:MapViewController = segue.destination as! MapViewController
         MapViewController.num = self.number
     }
     
