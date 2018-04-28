@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84417D602089F4A100BB3513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84417D5F2089F4A100BB3513 /* AppDelegate.swift */; };
 		84417D622089F4A100BB3513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84417D612089F4A100BB3513 /* ViewController.swift */; };
 		84417D652089F4A100BB3513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84417D632089F4A100BB3513 /* Main.storyboard */; };
 		84417D672089F4A400BB3513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84417D662089F4A400BB3513 /* Assets.xcassets */; };
@@ -19,11 +18,11 @@
 		84417D96208D90EB00BB3513 /* ipaexg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84417D92208D90EA00BB3513 /* ipaexg.ttf */; };
 		84417D97208D90EB00BB3513 /* Readme_IPAexfont00301.txt in Resources */ = {isa = PBXBuildFile; fileRef = 84417D93208D90EA00BB3513 /* Readme_IPAexfont00301.txt */; };
 		84417D98208D90EB00BB3513 /* IPA_Font_License_Agreement_v1.0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 84417D94208D90EA00BB3513 /* IPA_Font_License_Agreement_v1.0.txt */; };
-		84417D9A208EF93000BB3513 /* jizou.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 84417D99208EF93000BB3513 /* jizou.PNG */; };
-		84417D9C208EF93B00BB3513 /* IMG_9756.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 84417D9B208EF93B00BB3513 /* IMG_9756.PNG */; };
-		84417D9E208EF94400BB3513 /* IMG_9755.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 84417D9D208EF94300BB3513 /* IMG_9755.PNG */; };
-		84417DA02090322700BB3513 /* daibutu.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84417D9F2090322700BB3513 /* daibutu.1.jpg */; };
-		84417DA22090326700BB3513 /* daibutu.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 84417DA12090326600BB3513 /* daibutu.PNG */; };
+		84417DA42090AAC200BB3513 /* daibutu.png in Resources */ = {isa = PBXBuildFile; fileRef = 84417DA32090AAC200BB3513 /* daibutu.png */; };
+		84417DA62090B3DA00BB3513 /* daibutu.gazou.png in Resources */ = {isa = PBXBuildFile; fileRef = 84417DA52090B3DA00BB3513 /* daibutu.gazou.png */; };
+		8499F83E20941728000BA1BA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499F83D20941728000BA1BA /* MapViewController.swift */; };
+		8499F84020942E2A000BA1BA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499F83F20942E2A000BA1BA /* SecondViewController.swift */; };
+		8499F84220942F5F000BA1BA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499F84120942F5F000BA1BA /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +44,6 @@
 
 /* Begin PBXFileReference section */
 		84417D5C2089F4A100BB3513 /* kamakuraMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kamakuraMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		84417D5F2089F4A100BB3513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84417D612089F4A100BB3513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84417D642089F4A100BB3513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84417D662089F4A400BB3513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,11 +60,12 @@
 		84417D92208D90EA00BB3513 /* ipaexg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ipaexg.ttf; sourceTree = "<group>"; };
 		84417D93208D90EA00BB3513 /* Readme_IPAexfont00301.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme_IPAexfont00301.txt; sourceTree = "<group>"; };
 		84417D94208D90EA00BB3513 /* IPA_Font_License_Agreement_v1.0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IPA_Font_License_Agreement_v1.0.txt; sourceTree = "<group>"; };
-		84417D99208EF93000BB3513 /* jizou.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jizou.PNG; sourceTree = "<group>"; };
-		84417D9B208EF93B00BB3513 /* IMG_9756.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_9756.PNG; sourceTree = "<group>"; };
-		84417D9D208EF94300BB3513 /* IMG_9755.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_9755.PNG; sourceTree = "<group>"; };
-		84417D9F2090322700BB3513 /* daibutu.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daibutu.1.jpg; sourceTree = "<group>"; };
-		84417DA12090326600BB3513 /* daibutu.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daibutu.PNG; sourceTree = "<group>"; };
+		84417DA32090AAC200BB3513 /* daibutu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = daibutu.png; path = ../../../../kamakura.Ap/daibutu.png; sourceTree = "<group>"; };
+		84417DA52090B3DA00BB3513 /* daibutu.gazou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daibutu.gazou.png; sourceTree = "<group>"; };
+		8499F83D20941728000BA1BA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8499F83F20942E2A000BA1BA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8499F84120942F5F000BA1BA /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		8499F843209442A7000BA1BA /* Mutsuki.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mutsuki.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,9 +119,12 @@
 			isa = PBXGroup;
 			children = (
 				84417D90208D90EA00BB3513 /* IPAexfont00301 */,
-				84417D5F2089F4A100BB3513 /* AppDelegate.swift */,
-				84417D612089F4A100BB3513 /* ViewController.swift */,
 				84417D632089F4A100BB3513 /* Main.storyboard */,
+				8499F843209442A7000BA1BA /* Mutsuki.ttf */,
+				84417D612089F4A100BB3513 /* ViewController.swift */,
+				8499F83F20942E2A000BA1BA /* SecondViewController.swift */,
+				8499F83D20941728000BA1BA /* MapViewController.swift */,
+				8499F84120942F5F000BA1BA /* CustomButton.swift */,
 				84417D662089F4A400BB3513 /* Assets.xcassets */,
 				84417D682089F4A400BB3513 /* LaunchScreen.storyboard */,
 				84417D6B2089F4A400BB3513 /* Info.plist */,
@@ -159,11 +161,8 @@
 		84417D90208D90EA00BB3513 /* IPAexfont00301 */ = {
 			isa = PBXGroup;
 			children = (
-				84417DA12090326600BB3513 /* daibutu.PNG */,
-				84417D9F2090322700BB3513 /* daibutu.1.jpg */,
-				84417D9D208EF94300BB3513 /* IMG_9755.PNG */,
-				84417D9B208EF93B00BB3513 /* IMG_9756.PNG */,
-				84417D99208EF93000BB3513 /* jizou.PNG */,
+				84417DA52090B3DA00BB3513 /* daibutu.gazou.png */,
+				84417DA32090AAC200BB3513 /* daibutu.png */,
 				84417D91208D90EA00BB3513 /* ipaexm.ttf */,
 				84417D92208D90EA00BB3513 /* ipaexg.ttf */,
 				84417D93208D90EA00BB3513 /* Readme_IPAexfont00301.txt */,
@@ -277,16 +276,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				84417D6A2089F4A400BB3513 /* LaunchScreen.storyboard in Resources */,
-				84417D9E208EF94400BB3513 /* IMG_9755.PNG in Resources */,
 				84417D672089F4A400BB3513 /* Assets.xcassets in Resources */,
 				84417D98208D90EB00BB3513 /* IPA_Font_License_Agreement_v1.0.txt in Resources */,
-				84417DA22090326700BB3513 /* daibutu.PNG in Resources */,
 				84417D96208D90EB00BB3513 /* ipaexg.ttf in Resources */,
 				84417D95208D90EB00BB3513 /* ipaexm.ttf in Resources */,
-				84417D9C208EF93B00BB3513 /* IMG_9756.PNG in Resources */,
-				84417D9A208EF93000BB3513 /* jizou.PNG in Resources */,
-				84417DA02090322700BB3513 /* daibutu.1.jpg in Resources */,
+				84417DA42090AAC200BB3513 /* daibutu.png in Resources */,
 				84417D97208D90EB00BB3513 /* Readme_IPAexfont00301.txt in Resources */,
+				84417DA62090B3DA00BB3513 /* daibutu.gazou.png in Resources */,
 				84417D652089F4A100BB3513 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,8 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8499F84020942E2A000BA1BA /* SecondViewController.swift in Sources */,
 				84417D622089F4A100BB3513 /* ViewController.swift in Sources */,
-				84417D602089F4A100BB3513 /* AppDelegate.swift in Sources */,
+				8499F83E20941728000BA1BA /* MapViewController.swift in Sources */,
+				8499F84220942F5F000BA1BA /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
