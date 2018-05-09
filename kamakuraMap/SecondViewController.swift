@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController_1: UIViewController {
+class SecondViewController: UIViewController {
     
     
     
@@ -22,7 +22,8 @@ class ViewController_1: UIViewController {
     @IBAction func hase() {
         number += 2
     }
-    @IBAction func eno() {
+    
+    @IBAction func eno(_ sender: Any) {
         number += 3
     }
     

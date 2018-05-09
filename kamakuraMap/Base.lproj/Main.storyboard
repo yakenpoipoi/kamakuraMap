@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w6h-uA-zgg">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,20 +10,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--InitialViewController-->
         <scene sceneID="nO9-ND-qq9">
             <objects>
-                <viewController id="w6h-uA-zgg" customClass="ViewController" customModule="kamakuraMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="InitialViewController" id="w6h-uA-zgg" customClass="ViewController" customModule="kamakuraMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EFF-lg-2ic">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鎌倉観光" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8S-sg-Nkk">
+                                <rect key="frame" x="86" y="77" width="204" height="41"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIR-M1-Ewh">
-                                <rect key="frame" x="218" y="411" width="94" height="92"/>
+                                <rect key="frame" x="221" y="411" width="99" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9614030116580311" green="0.87274307138702811" blue="0.41926070777452401" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="グルメ">
-                                    <color key="titleColor" red="0.0054444624352331106" green="0.0049423777647440775" blue="0.0023742896021419742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.35955457321841333" green="0.80544699755762239" blue="0.96080166101455688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -36,19 +43,12 @@
                                     <segue destination="NcO-NL-AfI" kind="presentation" id="tGR-HL-tGL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="鎌倉観光" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8S-sg-Nkk">
-                                <rect key="frame" x="86" y="77" width="243" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="41"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voy-0b-oWp">
-                                <rect key="frame" x="86" y="411" width="99" height="92"/>
+                                <rect key="frame" x="78" y="411" width="90" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.90902931512943819" blue="0.41620335767299488" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="地図">
-                                    <color key="titleColor" red="0.015625" green="0.014203583048897472" blue="0.006503177463640545" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.80027525906735753" green="0.11588648671757459" blue="0.61714558452503454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -58,50 +58,61 @@
                                 <connections>
                                     <action selector="tizu:" destination="Hc8-2W-zpd" eventType="touchUpInside" id="4KM-PF-Knu"/>
                                     <action selector="tizu:" destination="w6h-uA-zgg" eventType="touchUpInside" id="iQe-PG-JMU"/>
-                                    <segue destination="EMm-m9-pHq" kind="presentation" id="ror-Qs-wgK"/>
+                                    <segue destination="0Rh-6V-CL1" kind="show" id="8Mh-vK-8h6"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.88281119518992224" green="1" blue="0.69457316014404613" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.99093534813279149" green="1" blue="0.9474027680287721" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="qtd-Q3-gfy" firstAttribute="trailing" secondItem="t8S-sg-Nkk" secondAttribute="trailing" constant="85" id="0Wq-0F-Yau"/>
+                            <constraint firstItem="t8S-sg-Nkk" firstAttribute="top" secondItem="qtd-Q3-gfy" secondAttribute="top" constant="57" id="CLB-0D-fmx"/>
+                            <constraint firstItem="t8S-sg-Nkk" firstAttribute="leading" secondItem="qtd-Q3-gfy" secondAttribute="leading" constant="86" id="O68-JN-DRg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qtd-Q3-gfy"/>
                     </view>
+                    <navigationItem key="navigationItem" id="XHM-O9-9xs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVI-CD-7hF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Hc8-2W-zpd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-600" y="-329"/>
+            <point key="canvasLocation" x="338.39999999999998" y="-329.68515742128938"/>
         </scene>
-        <!--View Controller1-->
+        <!--駅一覧-->
         <scene sceneID="zM1-Qh-dU2">
             <objects>
-                <viewController id="EMm-m9-pHq" customClass="ViewController_1" customModule="kamakuraMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="EMm-m9-pHq" customClass="SecondViewController" customModule="kamakuraMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XBs-bs-s7E">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="red-wJ-vyY">
-                                <rect key="frame" x="0.0" y="322" width="414" height="93"/>
+                                <rect key="frame" x="0.0" y="322" width="375" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.86232167295371598" green="1" blue="0.78491549710918429" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="　長谷駅周辺">
                                     <color key="titleColor" red="0.004472959844559532" green="0.0032422542257312674" blue="0.0040448503097422856" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="hase" destination="EMm-m9-pHq" eventType="touchUpInside" id="13H-Eh-C0A"/>
+                                    <segue destination="Sap-Ov-Yzc" kind="presentation" id="Car-5X-c3r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVB-HQ-hwW">
-                                <rect key="frame" x="0.0" y="499" width="414" height="93"/>
+                                <rect key="frame" x="0.0" y="502" width="375" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91373797072110752" green="0.98423716242070192" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="江ノ島">
+                                <state key="normal" title="江ノ島周辺">
                                     <color key="titleColor" red="0.039693614074672763" green="0.040843588082901561" blue="0.038290618040127622" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="eno" destination="EMm-m9-pHq" eventType="touchUpInside" id="rCq-Jl-uX7"/>
+                                    <action selector="eno:" destination="EMm-m9-pHq" eventType="touchUpInside" id="VUH-Qn-fAh"/>
+                                    <segue destination="Sap-Ov-Yzc" kind="presentation" id="rEG-81-Qts"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69X-Tq-aBg">
-                                <rect key="frame" x="0.0" y="143" width="414" height="104"/>
+                                <rect key="frame" x="0.0" y="143" width="375" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.94718301495901414" blue="0.9200959876847099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
@@ -110,53 +121,52 @@
                                 </state>
                                 <connections>
                                     <action selector="kama" destination="EMm-m9-pHq" eventType="touchUpInside" id="bMp-uV-xKG"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="hZG-Ng-00d"/>
+                                    <segue destination="Sap-Ov-Yzc" kind="presentation" id="hZG-Ng-00d"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="N5V-tS-11m"/>
                     </view>
-                    <connections>
-                        <outlet property="enosima" destination="YVB-HQ-hwW" id="I7D-iO-Aye"/>
-                        <outlet property="hase" destination="red-wJ-vyY" id="7vB-7F-pN4"/>
-                        <outlet property="kamakura_1" destination="69X-Tq-aBg" id="GmQ-9p-8zd"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="駅一覧" id="XjB-42-PXu"/>
+                    <keyCommands>
+                        <keyCommand/>
+                    </keyCommands>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Me-bc-9CQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="-329"/>
+            <point key="canvasLocation" x="2122.4000000000001" y="-329.68515742128938"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="EmS-OF-fSd">
             <objects>
                 <tableViewController id="NcO-NL-AfI" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="03H-kA-Ghm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="l33-Bx-2RW">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l33-Bx-2RW" id="jK6-Sd-H21">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="oyb-5u-TSw">
-                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oyb-5u-TSw" id="M5z-ML-eTR">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1Fg-HG-NIM">
-                                <rect key="frame" x="0.0" y="116" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Fg-HG-NIM" id="yjC-bc-VYe">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -171,30 +181,25 @@
             </objects>
             <point key="canvasLocation" x="-600" y="517"/>
         </scene>
-        <!--Map View Controller-->
+        <!--駅周辺-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="kamakuraMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="駅周辺" id="BYZ-38-t0r" customClass="MapViewController" customModule="kamakuraMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mWa-JE-pxy">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hb8-BD-jDA">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dgT-7L-7P0">
-                                        <rect key="frame" x="0.0" y="30" width="414" height="686"/>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dgT-7L-7P0">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="n17-ZF-IMd"/>
                                         </connections>
                                     </mapView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="dgT-7L-7P0" firstAttribute="top" secondItem="Hb8-BD-jDA" secondAttribute="bottom" id="1fB-SQ-ATx"/>
                                     <constraint firstAttribute="trailing" secondItem="dgT-7L-7P0" secondAttribute="trailing" id="ECE-Gy-bx5"/>
                                     <constraint firstAttribute="bottom" secondItem="dgT-7L-7P0" secondAttribute="bottom" id="GKo-FN-njg"/>
                                     <constraint firstItem="dgT-7L-7P0" firstAttribute="leading" secondItem="mWa-JE-pxy" secondAttribute="leading" id="Hxm-fJ-bGH"/>
@@ -214,13 +219,53 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="駅周辺" id="eMo-Xi-4Ar"/>
                     <connections>
                         <outlet property="mapView" destination="dgT-7L-7P0" id="8Tg-BR-WFx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128" y="-329"/>
+            <point key="canvasLocation" x="3944.8000000000002" y="-329.68515742128938"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="j8t-v7-X4P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Rh-6V-CL1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uev-hV-wF5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EMm-m9-pHq" kind="relationship" relationship="rootViewController" id="wG2-JC-wEs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PnH-4Q-Dz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1216.8" y="-330.58470764617692"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Kf-Ia-nFY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sap-Ov-Yzc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XUH-PA-NXR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kR8-Jz-pTO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PLW-Fs-nfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3104.8000000000002" y="-330.58470764617692"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hZG-Ng-00d"/>
+    </inferredMetricsTieBreakers>
 </document>
