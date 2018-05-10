@@ -24,27 +24,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIR-M1-Ewh">
-                                <rect key="frame" x="221" y="411" width="99" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.9614030116580311" green="0.87274307138702811" blue="0.41926070777452401" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="グルメ">
-                                    <color key="titleColor" red="0.35955457321841333" green="0.80544699755762239" blue="0.96080166101455688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="60"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="gurume:" destination="w6h-uA-zgg" eventType="touchUpInside" id="Ua5-G9-0cA"/>
-                                    <action selector="gurume:" destination="Hc8-2W-zpd" eventType="touchUpInside" id="Vdf-3O-WvV"/>
-                                    <segue destination="NcO-NL-AfI" kind="presentation" id="tGR-HL-tGL"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voy-0b-oWp">
-                                <rect key="frame" x="78" y="411" width="90" height="92"/>
+                                <rect key="frame" x="134" y="364" width="107" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.90902931512943819" blue="0.41620335767299488" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="地図">
@@ -80,7 +61,7 @@
         <!--駅一覧-->
         <scene sceneID="zM1-Qh-dU2">
             <objects>
-                <viewController id="EMm-m9-pHq" customClass="SecondViewController" customModule="kamakuraMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="EMm-m9-pHq" customClass="SecondViewController" customModule="kamakuraMap" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XBs-bs-s7E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,62 +110,15 @@
                         <viewLayoutGuide key="safeArea" id="N5V-tS-11m"/>
                     </view>
                     <navigationItem key="navigationItem" title="駅一覧" id="XjB-42-PXu"/>
-                    <keyCommands>
-                        <keyCommand/>
-                    </keyCommands>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Me-bc-9CQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2122.4000000000001" y="-329.68515742128938"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="EmS-OF-fSd">
-            <objects>
-                <tableViewController id="NcO-NL-AfI" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="03H-kA-Ghm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="l33-Bx-2RW">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l33-Bx-2RW" id="jK6-Sd-H21">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="oyb-5u-TSw">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oyb-5u-TSw" id="M5z-ML-eTR">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1Fg-HG-NIM">
-                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Fg-HG-NIM" id="yjC-bc-VYe">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="NcO-NL-AfI" id="3LP-PM-Wvr"/>
-                            <outlet property="delegate" destination="NcO-NL-AfI" id="i7W-DO-vrd"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SKy-H0-0XJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-600" y="517"/>
-        </scene>
         <!--駅周辺-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="駅周辺" id="BYZ-38-t0r" customClass="MapViewController" customModule="kamakuraMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="駅周辺" id="BYZ-38-t0r" customClass="MapViewController" customModule="kamakuraMap" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3944.8000000000002" y="-329.68515742128938"/>
+            <point key="canvasLocation" x="1785" y="555"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="j8t-v7-X4P">
@@ -262,10 +196,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLW-Fs-nfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3104.8000000000002" y="-330.58470764617692"/>
+            <point key="canvasLocation" x="705" y="556"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hZG-Ng-00d"/>
+        <segue reference="rEG-81-Qts"/>
     </inferredMetricsTieBreakers>
 </document>

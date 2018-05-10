@@ -116,8 +116,8 @@
 		84417D5E2089F4A100BB3513 /* kamakuraMap */ = {
 			isa = PBXGroup;
 			children = (
-				8499F8482094AD6D000BA1BA /* AppDelegate.swift */,
 				84417D90208D90EA00BB3513 /* IPAexfont00301 */,
+				8499F8482094AD6D000BA1BA /* AppDelegate.swift */,
 				84417D632089F4A100BB3513 /* Main.storyboard */,
 				8499F843209442A7000BA1BA /* Mutsuki.ttf */,
 				84417D612089F4A100BB3513 /* ViewController.swift */,
@@ -236,6 +236,11 @@
 				TargetAttributes = {
 					84417D5B2089F4A100BB3513 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					84417D6F2089F4A400BB3513 = {
 						CreatedOnToolsVersion = 9.3;
