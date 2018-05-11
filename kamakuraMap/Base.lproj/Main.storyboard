@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w6h-uA-zgg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kUR-WR-mmz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,18 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鎌倉観光" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8S-sg-Nkk">
-                                <rect key="frame" x="86" y="77" width="204" height="41"/>
-                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="41"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voy-0b-oWp">
-                                <rect key="frame" x="134" y="364" width="107" height="114"/>
+                                <rect key="frame" x="81" y="464" width="209" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.90902931512943819" blue="0.41620335767299488" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="地図">
-                                    <color key="titleColor" red="0.80027525906735753" green="0.11588648671757459" blue="0.61714558452503454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.70719991452530495" green="0.80345288212435229" blue="0.60615156132591774" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="地図を開く">
+                                    <color key="titleColor" red="0.3313920058724279" green="0.35024692357512954" blue="0.24908299510989612" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -39,16 +33,26 @@
                                 <connections>
                                     <action selector="tizu:" destination="Hc8-2W-zpd" eventType="touchUpInside" id="4KM-PF-Knu"/>
                                     <action selector="tizu:" destination="w6h-uA-zgg" eventType="touchUpInside" id="iQe-PG-JMU"/>
-                                    <segue destination="0Rh-6V-CL1" kind="show" id="8Mh-vK-8h6"/>
+                                    <segue destination="EMm-m9-pHq" kind="show" id="YBK-Bj-QvT"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_118490_256-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="aGk-9v-pJp">
+                                <rect key="frame" x="56" y="327" width="103" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_153250_256-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="azn-hV-ySY">
+                                <rect key="frame" x="210" y="309" width="133" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="鎌倉案内" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8S-sg-Nkk">
+                                <rect key="frame" x="86" y="180" width="204" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="48"/>
+                                <color key="textColor" red="0.98450435600967179" green="0.98409431791288882" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.99093534813279149" green="1" blue="0.9474027680287721" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="qtd-Q3-gfy" firstAttribute="trailing" secondItem="t8S-sg-Nkk" secondAttribute="trailing" constant="85" id="0Wq-0F-Yau"/>
-                            <constraint firstItem="t8S-sg-Nkk" firstAttribute="top" secondItem="qtd-Q3-gfy" secondAttribute="top" constant="57" id="CLB-0D-fmx"/>
-                            <constraint firstItem="t8S-sg-Nkk" firstAttribute="leading" secondItem="qtd-Q3-gfy" secondAttribute="leading" constant="86" id="O68-JN-DRg"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.030335145280916884" green="0.53705877590673579" blue="0.045510986715775741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="qtd-Q3-gfy"/>
                     </view>
                     <navigationItem key="navigationItem" id="XHM-O9-9xs"/>
@@ -56,12 +60,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVI-CD-7hF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Hc8-2W-zpd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="338.39999999999998" y="-329.68515742128938"/>
+            <point key="canvasLocation" x="1944.8" y="-465.51724137931041"/>
         </scene>
         <!--駅一覧-->
         <scene sceneID="zM1-Qh-dU2">
             <objects>
-                <viewController id="EMm-m9-pHq" customClass="SecondViewController" customModule="kamakuraMap" sceneMemberID="viewController">
+                <viewController id="EMm-m9-pHq" customClass="SecondViewController" customModule="kamakuraMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XBs-bs-s7E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,7 +80,7 @@
                                 </state>
                                 <connections>
                                     <action selector="hase" destination="EMm-m9-pHq" eventType="touchUpInside" id="13H-Eh-C0A"/>
-                                    <segue destination="Sap-Ov-Yzc" kind="presentation" id="Car-5X-c3r"/>
+                                    <action selector="toNextView" destination="EMm-m9-pHq" eventType="touchUpInside" id="LL3-ee-xQF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVB-HQ-hwW">
@@ -89,7 +93,7 @@
                                 </state>
                                 <connections>
                                     <action selector="eno:" destination="EMm-m9-pHq" eventType="touchUpInside" id="VUH-Qn-fAh"/>
-                                    <segue destination="Sap-Ov-Yzc" kind="presentation" id="rEG-81-Qts"/>
+                                    <action selector="toNextView" destination="EMm-m9-pHq" eventType="touchUpInside" id="Hm8-aY-b5y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69X-Tq-aBg">
@@ -102,23 +106,23 @@
                                 </state>
                                 <connections>
                                     <action selector="kama" destination="EMm-m9-pHq" eventType="touchUpInside" id="bMp-uV-xKG"/>
-                                    <segue destination="Sap-Ov-Yzc" kind="presentation" id="hZG-Ng-00d"/>
+                                    <action selector="toNextView" destination="EMm-m9-pHq" eventType="touchUpInside" id="4cE-Gy-rmW"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.22957825876384877" green="0.55359455958549231" blue="0.10639236236616134" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="N5V-tS-11m"/>
                     </view>
                     <navigationItem key="navigationItem" title="駅一覧" id="XjB-42-PXu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Me-bc-9CQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122.4000000000001" y="-329.68515742128938"/>
+            <point key="canvasLocation" x="2774" y="-466"/>
         </scene>
-        <!--駅周辺-->
+        <!--Station-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="駅周辺" id="BYZ-38-t0r" customClass="MapViewController" customModule="kamakuraMap" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="map" title="Station" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MapViewController" customModule="kamakuraMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,6 +132,7 @@
                                 <subviews>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dgT-7L-7P0">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <color key="backgroundColor" red="0.22416041254548177" green="0.55359455958549231" blue="0.087448346793700282" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="n17-ZF-IMd"/>
                                         </connections>
@@ -153,53 +158,37 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="駅周辺" id="eMo-Xi-4Ar"/>
+                    <navigationItem key="navigationItem" title="Station" id="eMo-Xi-4Ar"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="mapView" destination="dgT-7L-7P0" id="8Tg-BR-WFx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="555"/>
+            <point key="canvasLocation" x="3588" y="-466"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="j8t-v7-X4P">
+        <scene sceneID="9Pn-RE-B8W">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Rh-6V-CL1" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kUR-WR-mmz" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uev-hV-wF5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pms-o1-fDJ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="EMm-m9-pHq" kind="relationship" relationship="rootViewController" id="wG2-JC-wEs"/>
+                        <segue destination="w6h-uA-zgg" kind="relationship" relationship="rootViewController" id="3oo-Ey-bba"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PnH-4Q-Dz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AE5-8m-tj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1216.8" y="-330.58470764617692"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="5Kf-Ia-nFY">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sap-Ov-Yzc" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XUH-PA-NXR">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kR8-Jz-pTO"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PLW-Fs-nfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="705" y="556"/>
+            <point key="canvasLocation" x="1118" y="-466"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="rEG-81-Qts"/>
-    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="icon_118490_256-2.png" width="256" height="256"/>
+        <image name="icon_153250_256-2.png" width="256" height="256"/>
+    </resources>
 </document>

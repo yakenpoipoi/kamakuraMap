@@ -11,9 +11,6 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    
-    
-    
     var number :Int = 0
     
     @IBAction func kama() {
@@ -27,14 +24,11 @@ class SecondViewController: UIViewController {
         number += 3
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        let MapViewController:MapViewController = segue.destination as! MapViewController
-        MapViewController.num = self.number
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -44,6 +38,16 @@ class SecondViewController: UIViewController {
     }
     
 
+    @IBAction func toNextView() {
+        
+        let viewControler = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "map") as! MapViewController
+        
+        viewControler.num = self.number
+        
+        //ViewController
+        self.navigationController?.pushViewController(viewControler, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
