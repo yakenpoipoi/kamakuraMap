@@ -14,14 +14,14 @@ class SecondViewController: UIViewController {
     var number :Int = 0
     
     @IBAction func kama() {
-        number += 1
+        number = 1
     }
     @IBAction func hase() {
-        number += 2
+        number = 2
     }
     
     @IBAction func eno(_ sender: Any) {
-        number += 3
+        number = 3
     }
     
     override func viewDidLoad() {

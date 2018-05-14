@@ -9,26 +9,66 @@
 import UIKit
 import MapKit
 
+class TestMKPointAnnotation: MKPointAnnotation {
+    //ピンの色
+    var pinColor:UIColor!
+    
+    //ピンの画像
+    var pinImage: UIImage!
+}
+
+
+
 class MapViewController: UIViewController, MKMapViewDelegate {
 
-    @IBOutlet weak var mapView: MKMapView! //to name of map
     
+    @IBOutlet weak var mapView: MKMapView! //to name of map
     //annotationView を返すメソッド
-//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//        if annotation is MKUserLocation {
-//            return nil
-//        }
-//        let reuseId = "pin"
-//        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
-//        if pinView == nil {
-//            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-//            pinView?.animatesDrop = true
-//        }
-//        else {
-//            pinView?.annotation = annotation
+   func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation {
+            return nil
+        }
+    
+        let reuseId = "pin"
+        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
+    
+    //一番最初のannotationView 
+        if pinView == nil {
+            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+            pinView?.animatesDrop = true
+            pinView?.canShowCallout = true
+         //   pinView?.image
+            pinView?.leftCalloutAccessoryView = UIButton(type: UIButtonType.detailDisclosure)
+        }
+        
+        else {
+            pinView?.annotation = annotation
+            pinView?.canShowCallout = true
+        }
+        return pinView
+    }
+//        if let test = annotation13 as? TestMKPointAnnotation {
+//            if(test.pinColor != nil) {
+//
+//            //色が設定されている場合
+//            let testPinView = MKPinAnnotationView()
+//            testPinView.annotation = annotation13
+//            testPinView.pinTintColor = test.pinColor
+//            testPinView.canShowCallout = true
+//
+//            return testPinView
+//
+//        } else if(test.pinImage != nil) {
+//
+//            //画像が設定されている場合
+//            let testPinView = MKAnnotationView()
+//            testPinView.annotation = annotation13
+//            testPinView.image = UIImage(named:test.pinImage)
+//            testPinView.canShowCallout = true
+//
+//            return testPinView
 //        }
 //
-//        return pinView
 //    }
     
     
@@ -37,8 +77,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
         //// Use "if"!!!!
         if num == 1 {     //kamakura
             //緯度、経度を指定
@@ -46,66 +84,74 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             let span = MKCoordinateSpanMake(0.01,0.01)//範囲を指定
             let region = MKCoordinateRegionMake(coordinate, span)
             mapView.setRegion(region, animated:true)
+            
             //ピンの位置付け
-            let annotation5 = MKPointAnnotation()
+            let annotation5 = TestMKPointAnnotation()
             annotation5.coordinate = CLLocationCoordinate2DMake(35.3155,139.5455)
             self.mapView.addAnnotation(annotation5)
             
             //ピンのタイトルとバルーン
-            let annotation6 = MKPointAnnotation()
+            let annotation6 = TestMKPointAnnotation()
             annotation6.coordinate = CLLocationCoordinate2DMake(35.318, 139.5462)
             annotation6.title = "title"
             annotation6.subtitle = "subtitle"
             self.mapView.addAnnotation(annotation6)
+        
+            
             
             
         } else if num == 2 {      //hase
             //緯度、経度を指定
             let coordinate = CLLocationCoordinate2DMake(35.3112613, 139.5357395)
-            //範囲指定
             let span = MKCoordinateSpanMake(0.02,0.02)
-            //
             let region = MKCoordinateRegionMake(coordinate, span)
             mapView.setRegion(region, animated:true)
-            //ピンの位置付け
             
             // シンポジおん
-            let annotation10 = MKPointAnnotation()
+            let annotation10 = TestMKPointAnnotation()
             annotation10.coordinate = CLLocationCoordinate2DMake(35.3108709, 139.5360875)
             annotation10.title = "シンポジオン"
             annotation10.subtitle = "subtitle"
             self.mapView.addAnnotation(annotation10)
             
             //ピンのタイトルとバルーン　松原庵
-            let annotation2 = MKPointAnnotation()
+            let annotation2 = TestMKPointAnnotation()
             annotation2.coordinate = CLLocationCoordinate2DMake(35.3114234, 139.5409676)
             annotation2.title = "鎌倉　松原庵"
-            annotation2.subtitle = "外観からとっても昔ながらの雰囲気が漂うお店。\n甲府でありながら、高級感もあり、誰を連れて行っても満足感間違いなしのお店。"
+            annotation2.subtitle = "外観からとっても昔ながらの雰囲気が漂うお店。"
             self.mapView.addAnnotation(annotation2)
             
-            let annotation8 = MKPointAnnotation()
+            let annotation8 = TestMKPointAnnotation()
             annotation8.coordinate = CLLocationCoordinate2DMake(35.3132145, 139.5351166)
             annotation8.title = "鎌倉土鍋kaedena."
             annotation8.subtitle = "subtitle"
             self.mapView.addAnnotation(annotation8)
             
-            let annotation9 = MKPointAnnotation()
+            let annotation9 = TestMKPointAnnotation()
             annotation9.coordinate = CLLocationCoordinate2DMake(35.3107601, 139.5360848)
             annotation9.title = "鎌倉プリン工房　可愛い娘たち"
             annotation9.subtitle = "subtitle"
             self.mapView.addAnnotation(annotation9)
             
-            let annotation11 = MKPointAnnotation()
+            let annotation11 = TestMKPointAnnotation()
             annotation11.coordinate = CLLocationCoordinate2DMake(35.3099730, 139.5339568)
             annotation11.title = "カフェ　カプア"
             annotation11.subtitle = "subtitle"
             self.mapView.addAnnotation(annotation11)
             
-            let annotation12 = MKPointAnnotation()
+            let annotation12 = TestMKPointAnnotation()
             annotation12.coordinate = CLLocationCoordinate2DMake(35.3095322, 139.5337647)
             annotation12.title = "caƒe recette 鎌倉"
             annotation12.subtitle = "subtitle"
             self.mapView.addAnnotation(annotation12)
+            
+            let annotation13 = TestMKPointAnnotation()
+            annotation13.coordinate = CLLocationCoordinate2DMake(35.3095322, 139.5337647)
+            annotation13.title = "長谷駅"
+            annotation13.pinImage = #imageLiteral(resourceName: "train.png")
+            self.mapView.addAnnotation(annotation13)
+            
+            
             
         }else {      //eno
             //緯度、経度を指定
@@ -116,11 +162,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             let region = MKCoordinateRegionMake(coordinate, span)
             mapView.setRegion(region, animated:true)
             //ピンの位置付け
-            let annotation3 = MKPointAnnotation()
+            let annotation3 = TestMKPointAnnotation()
             annotation3.coordinate = CLLocationCoordinate2DMake(35.3155,139.5455)
             self.mapView.addAnnotation(annotation3)
             //ピンのタイトルとバルーン
-            let annotation4 = MKPointAnnotation()
+            let annotation4 = TestMKPointAnnotation()
             annotation4.coordinate = CLLocationCoordinate2DMake(35.318, 139.5462)
             annotation4.title = "title"
             annotation4.subtitle = "subtitle"
@@ -130,21 +176,16 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
     }
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }
+
+
+
