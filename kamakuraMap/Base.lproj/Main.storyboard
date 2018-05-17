@@ -18,14 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_118490_256-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="aGk-9v-pJp">
-                                <rect key="frame" x="81" y="327" width="103" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_153250_256-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="azn-hV-ySY">
-                                <rect key="frame" x="238" y="309" width="133" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voy-0b-oWp">
                                 <rect key="frame" x="103" y="514" width="209" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -45,11 +37,15 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="アセット 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="I39-p5-C2G">
-                                <rect key="frame" x="65" y="154" width="285" height="83"/>
+                                <rect key="frame" x="54" y="157" width="306" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bunbun.png" translatesAutoresizingMaskIntoConstraints="NO" id="vAH-Q8-fQe">
+                                <rect key="frame" x="41" y="294" width="353" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.030335145280916884" green="0.53705877590673579" blue="0.045510986715775741" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.89617745535714288" green="0.8994140625" blue="0.9797712053571429" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="qtd-Q3-gfy"/>
                     </view>
                     <navigationItem key="navigationItem" id="XHM-O9-9xs"/>
@@ -107,7 +103,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.22957825876384877" green="0.55359455958549231" blue="0.10639236236616134" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.89411764705882357" green="0.89803921568627454" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="N5V-tS-11m"/>
                     </view>
                     <navigationItem key="navigationItem" title="駅一覧" id="XjB-42-PXu"/>
@@ -129,7 +125,7 @@
                                 <subviews>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dgT-7L-7P0">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
-                                        <color key="backgroundColor" red="0.22416041254548177" green="0.55359455958549231" blue="0.087448346793700282" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="n17-ZF-IMd"/>
                                         </connections>
@@ -185,8 +181,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_118490_256-2.png" width="256" height="256"/>
-        <image name="icon_153250_256-2.png" width="256" height="256"/>
+        <image name="bunbun.png" width="518" height="244"/>
         <image name="アセット 1.png" width="501" height="120"/>
     </resources>
 </document>
