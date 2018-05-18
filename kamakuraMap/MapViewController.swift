@@ -281,8 +281,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             //画像が設定されている場合
             
             pinView?.annotation = annotation
-            //   pinView?.image
-//            pinView?.leftCalloutAccessoryView = UIButton(type: UIButtonType.detailDisclosure)
+//            pinView?.UIImage
+            pinView?.leftCalloutAccessoryView = UIButton(type: UIButtonType.detailDisclosure)
         } else {
             pinView?.annotation = annotation
             pinView?.canShowCallout = true
