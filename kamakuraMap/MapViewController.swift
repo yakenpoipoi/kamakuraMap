@@ -21,12 +21,12 @@ class TestMKPointAnnotation: MKPointAnnotation {
 
 class MapViewController: UIViewController, MKMapViewDelegate {
     
-    var imageView:UIImageView!
-    var scale:CGFloat = 1.0
-    var width:CGFloat = 0
-    var height:CGFloat = 0
-    var screenWidth:CGFloat = 0
-    var screenHeight:CGFloat = 0
+//    var imageView:UIImageView!
+//    var scale:CGFloat = 1.0
+//    var width:CGFloat = 0
+//    var height:CGFloat = 0
+//    var screenWidth:CGFloat = 0
+//    var screenHeight:CGFloat = 0
 
     
     @IBOutlet weak var mapView: MKMapView! //to name of map
