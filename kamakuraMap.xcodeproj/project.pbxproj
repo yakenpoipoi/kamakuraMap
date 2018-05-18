@@ -24,7 +24,6 @@
 		8499F84020942E2A000BA1BA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499F83F20942E2A000BA1BA /* SecondViewController.swift */; };
 		8499F8492094AD6E000BA1BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499F8482094AD6D000BA1BA /* AppDelegate.swift */; };
 		8499F85120A5A2F5000BA1BA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8499F85020A5A2F5000BA1BA /* icon.png */; };
-		8499F85320A5B9E3000BA1BA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8499F85220A5B9E3000BA1BA /* Storyboard.storyboard */; };
 		8499F85520A6333F000BA1BA /* icon_118490_256-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8499F85420A6333E000BA1BA /* icon_118490_256-2.png */; };
 		8499F85720A63345000BA1BA /* icon_153250_256-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8499F85620A63344000BA1BA /* icon_153250_256-2.png */; };
 		84A2CE6920AB6BB7006A654B /* アセット 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A2CE6820AB6BB6006A654B /* アセット 1.png */; };
@@ -75,7 +74,6 @@
 		8499F843209442A7000BA1BA /* Mutsuki.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mutsuki.ttf; sourceTree = "<group>"; };
 		8499F8482094AD6D000BA1BA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8499F85020A5A2F5000BA1BA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		8499F85220A5B9E3000BA1BA /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		8499F85420A6333E000BA1BA /* icon_118490_256-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_118490_256-2.png"; sourceTree = "<group>"; };
 		8499F85620A63344000BA1BA /* icon_153250_256-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_153250_256-2.png"; sourceTree = "<group>"; };
 		84A2CE6820AB6BB6006A654B /* アセット 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アセット 1.png"; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 		84417D532089F4A100BB3513 = {
 			isa = PBXGroup;
 			children = (
-				8499F85220A5B9E3000BA1BA /* Storyboard.storyboard */,
 				84417D5E2089F4A100BB3513 /* kamakuraMap */,
 				84417D732089F4A400BB3513 /* kamakuraMapTests */,
 				84417D7E2089F4A400BB3513 /* kamakuraMapUITests */,
@@ -319,7 +316,6 @@
 				84417D97208D90EB00BB3513 /* Readme_IPAexfont00301.txt in Resources */,
 				84417DA62090B3DA00BB3513 /* daibutu.gazou.png in Resources */,
 				84417D652089F4A100BB3513 /* Main.storyboard in Resources */,
-				8499F85320A5B9E3000BA1BA /* Storyboard.storyboard in Resources */,
 				84A2CE6D20AB7782006A654B /* bun.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,16 +518,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S8D799H7U9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = kamakuraMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lifeistech.kamakuraMap;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lifeistech.kamakura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "1e5cd423-3c15-4bc7-b022-fa1f0ef29d8f";
+				PROVISIONING_PROFILE_SPECIFIER = L10_Kishimoto;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -542,16 +539,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S8D799H7U9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = kamakuraMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lifeistech.kamakuraMap;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lifeistech.kamakura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "1e5cd423-3c15-4bc7-b022-fa1f0ef29d8f";
+				PROVISIONING_PROFILE_SPECIFIER = L10_Kishimoto;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

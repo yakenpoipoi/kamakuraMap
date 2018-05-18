@@ -36,8 +36,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
+    
         if num == 1 {     //kamakura
             //緯度、経度を指定
             let coordinate = CLLocationCoordinate2DMake(35.31898, 139.5505)//緯度経度を指定
@@ -282,7 +281,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             
             pinView?.annotation = annotation
 //            pinView?.UIImage
-            pinView?.leftCalloutAccessoryView = UIButton(type: UIButtonType.detailDisclosure)
+//            pinView?.leftCalloutAccessoryView = UIButton(type: UIButtonType.detailDisclosure)
         } else {
             pinView?.annotation = annotation
             pinView?.canShowCallout = true
