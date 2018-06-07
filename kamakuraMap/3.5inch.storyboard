@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jii-cr-95e">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--InitialViewController-->
+        <scene sceneID="B0Q-6C-dt6">
+            <objects>
+                <viewController title="InitialViewController" id="9qv-Bf-eVS" customClass="ViewController" customModule="kamakuraMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UN9-Xf-wxB">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bunbun.png" translatesAutoresizingMaskIntoConstraints="NO" id="zei-uj-yc5">
+                                <rect key="frame" x="256" y="371" width="256" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="アセット 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="1QR-7B-LJf">
+                                <rect key="frame" x="280" y="163" width="209" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a69-L7-hzm">
+                                <rect key="frame" x="302" y="739" width="164" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70719991449999997" green="0.80345288209999999" blue="0.60615156130000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="地図を開く">
+                                    <color key="titleColor" red="0.33139200590000001" green="0.35024692359999998" blue="0.24908299510000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tizu:" destination="qo7-Ob-NOy" eventType="touchUpInside" id="KUg-a5-Pco"/>
+                                    <action selector="tizu:" destination="9qv-Bf-eVS" eventType="touchUpInside" id="eAc-oB-iCQ"/>
+                                    <segue destination="2w6-sL-hMN" kind="presentation" id="SR2-b2-RmN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89617745540000004" green="0.8994140625" blue="0.97977120539999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="mFG-Ys-ooy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rtG-B5-eKh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToU-jU-LdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="qo7-Ob-NOy" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3296.875" y="-467.57812499999994"/>
+        </scene>
+        <!--駅一覧-->
+        <scene sceneID="vcr-74-Yry">
+            <objects>
+                <viewController id="2w6-sL-hMN" customClass="SecondViewController" customModule="kamakuraMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u8I-Ss-vsF">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORQ-Ty-1ig">
+                                <rect key="frame" x="177" y="172" width="414" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.94718301500000002" blue="0.92009598770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
+                                <state key="normal" title="鎌倉駅周辺">
+                                    <color key="titleColor" red="0.0044240094829999998" green="0.004472959845" blue="0.0042836558160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="kama" destination="2w6-sL-hMN" eventType="touchUpInside" id="zeT-63-FrJ"/>
+                                    <action selector="toNextView" destination="2w6-sL-hMN" eventType="touchUpInside" id="TES-Yy-50i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYV-uK-g3X">
+                                <rect key="frame" x="177" y="760" width="414" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91373797069999996" green="0.98423716240000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="江ノ島周辺">
+                                    <color key="titleColor" red="0.039693614070000001" green="0.04084358808" blue="0.038290618040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="eno:" destination="2w6-sL-hMN" eventType="touchUpInside" id="dc8-C5-yJO"/>
+                                    <action selector="toNextView" destination="2w6-sL-hMN" eventType="touchUpInside" id="1W6-iU-iPT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cD-C2-l21">
+                                <rect key="frame" x="177" y="466" width="414" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86232167299999996" green="1" blue="0.78491549709999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="　長谷駅周辺">
+                                    <color key="titleColor" red="0.004472959845" green="0.0032422542259999999" blue="0.0040448503099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="hase" destination="2w6-sL-hMN" eventType="touchUpInside" id="NVW-Kk-8YT"/>
+                                    <action selector="toNextView" destination="2w6-sL-hMN" eventType="touchUpInside" id="Rgn-1x-pqe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.8980392157" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8TO-v5-ajO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="駅一覧" id="ydd-eY-6M0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ql-ms-yZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4304.6875" y="-466.40624999999994"/>
+        </scene>
+        <!--Station-->
+        <scene sceneID="m6j-AA-pHk">
+            <objects>
+                <viewController storyboardIdentifier="map" title="Station" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bZc-mE-bh6" customClass="MapViewController" customModule="kamakuraMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l1O-XC-WHS">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s7J-3i-HMg">
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="g3T-RL-039">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="bZc-mE-bh6" id="Vl7-NE-IX8"/>
+                                        </connections>
+                                    </mapView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="g3T-RL-039" secondAttribute="bottom" id="kgz-47-Cwj"/>
+                                    <constraint firstItem="g3T-RL-039" firstAttribute="leading" secondItem="s7J-3i-HMg" secondAttribute="leading" id="oUY-fP-yUS"/>
+                                    <constraint firstAttribute="trailing" secondItem="g3T-RL-039" secondAttribute="trailing" id="rM5-k2-z3M"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gQ8-ZS-4gj" firstAttribute="bottom" secondItem="s7J-3i-HMg" secondAttribute="bottom" id="9ur-No-Mm6"/>
+                            <constraint firstItem="s7J-3i-HMg" firstAttribute="top" secondItem="gQ8-ZS-4gj" secondAttribute="top" id="CCq-63-UwZ"/>
+                            <constraint firstItem="s7J-3i-HMg" firstAttribute="top" secondItem="gQ8-ZS-4gj" secondAttribute="top" id="EUt-Aa-gaK"/>
+                            <constraint firstItem="s7J-3i-HMg" firstAttribute="trailing" secondItem="gQ8-ZS-4gj" secondAttribute="trailing" id="OJA-23-wSs"/>
+                            <constraint firstItem="gQ8-ZS-4gj" firstAttribute="trailing" secondItem="s7J-3i-HMg" secondAttribute="trailing" id="Vo3-zN-FLJ"/>
+                            <constraint firstItem="s7J-3i-HMg" firstAttribute="bottom" secondItem="gQ8-ZS-4gj" secondAttribute="bottom" id="VrZ-2t-t6m"/>
+                            <constraint firstItem="s7J-3i-HMg" firstAttribute="leading" secondItem="gQ8-ZS-4gj" secondAttribute="leading" id="naM-kW-3Eq"/>
+                            <constraint firstItem="s7J-3i-HMg" firstAttribute="leading" secondItem="gQ8-ZS-4gj" secondAttribute="leading" id="x4f-t1-Jh5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gQ8-ZS-4gj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Station" id="W2z-ga-wOG"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="mapView" destination="g3T-RL-039" id="KEe-9h-tK1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sji-VS-wvR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5118.75" y="-466.40624999999994"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dSJ-7X-DyH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jii-cr-95e" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UTi-Bv-me4">
+                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9qv-Bf-eVS" kind="relationship" relationship="rootViewController" id="TL0-WH-whh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aAf-b6-o1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2531.25" y="-467.57812499999994"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bunbun.png" width="518" height="244"/>
+        <image name="アセット 1.png" width="501" height="120"/>
+    </resources>
+</document>

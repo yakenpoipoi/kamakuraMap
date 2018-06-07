@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:kamakuraMap.xcodeproj">
+      location = "self:/Users/yoshiki/Desktop/TECH/kamakuraMap/kamakuraMap.xcodeproj">
    </FileRef>
 </Workspace>
